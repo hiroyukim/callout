@@ -1,4 +1,5 @@
 @import "compass/css3";
+@import "sassy-buttons";
 
 body {
     background: rgba(0, 0, 0, 0.4);
@@ -176,6 +177,15 @@ li.return-view-list {
         font-size: 24px;
         background-color: #c0392b;
     }
+}
+
+.call {
+    @include sassy-button("simple");
+    visibility: hidden;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.3em;
+    height: 70px;
 }
 
 .flaticon-blowfish:before {
