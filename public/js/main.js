@@ -42,13 +42,7 @@ $(function(){
                 setTimeout(function(){
                     $("#response-message").fadeOut("slow");
                     $(".overlay").hide();
-                    $("#office-vistiors-content").show();
-                    $("#staff-vistiors-content").show();
-                    $(".js-return-view-list").hide();
-
-                    $("ul#member-list li").each(function (i) {
-                        $(this).hide();
-                    });
+                    location.reload(true);
                 },5000);
             })
             .fail(function() {
