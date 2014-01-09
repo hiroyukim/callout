@@ -16,6 +16,8 @@ $(function(){
     var characters = ["blowfish", "celebration", "dog4", "sheep1", "silhouette2"];
 
     $(".js-syllabary").click(function () {
+        $('.call').invisible();
+
         var index = $(this).data("index");
 
         $("ul#member-list li").each(function (i) {
