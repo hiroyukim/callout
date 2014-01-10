@@ -1,42 +1,42 @@
-/* line 4, ../../sass/style.scss */
+/* line 3, ../../sass/style.scss */
 body {
   background: rgba(0, 0, 0, 0.4);
   background-color: #e67e22;
   background-image: url(/img/greyzz.png);
 }
 
-/* line 10, ../../sass/style.scss */
+/* line 9, ../../sass/style.scss */
 form {
   margin: 0px;
 }
 
-/* line 14, ../../sass/style.scss */
+/* line 13, ../../sass/style.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 19, ../../sass/style.scss */
+/* line 18, ../../sass/style.scss */
 h1.title {
   font: 450 45px/50px "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: center;
   padding: 0 0 40px 0;
 }
-/* line 24, ../../sass/style.scss */
+/* line 23, ../../sass/style.scss */
 h1.title i {
   color: #e67e22;
 }
-/* line 27, ../../sass/style.scss */
+/* line 26, ../../sass/style.scss */
 h1.title .flaticon-bell:before {
   font-size: 60px;
 }
 
-/* line 33, ../../sass/style.scss */
+/* line 32, ../../sass/style.scss */
 h4 {
   font-size: 24px;
 }
 
-/* line 37, ../../sass/style.scss */
+/* line 36, ../../sass/style.scss */
 .overlay {
   display: none;
   margin: 0;
@@ -50,11 +50,11 @@ h4 {
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* line 50, ../../sass/style.scss */
+/* line 49, ../../sass/style.scss */
 .office_visitors {
   padding: 0 0 20px 0;
 }
-/* line 53, ../../sass/style.scss */
+/* line 52, ../../sass/style.scss */
 .office_visitors a {
   -webkit-box-shadow: rgba(0, 0, 0, 0.05) -2px 2px 0, rgba(255, 255, 255, 0.5) -2px 2px 0 inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.05) -2px 2px 0, rgba(255, 255, 255, 0.5) -2px 2px 0 inset;
@@ -64,11 +64,11 @@ h4 {
   line-height: 100px;
 }
 
-/* line 63, ../../sass/style.scss */
+/* line 62, ../../sass/style.scss */
 .staff_visitors div {
   margin-bottom: 10px;
 }
-/* line 67, ../../sass/style.scss */
+/* line 66, ../../sass/style.scss */
 .staff_visitors a {
   height: 140px;
   line-height: 100px;
@@ -78,23 +78,23 @@ h4 {
   box-shadow: rgba(0, 0, 0, 0.05) -2px 2px 0, rgba(255, 255, 255, 0.5) -2px 2px 0 inset;
   background-color: #e67e22;
 }
-/* line 77, ../../sass/style.scss */
+/* line 76, ../../sass/style.scss */
 .staff_visitors a:hover,
 .staff_visitors a:focus,
 .staff_visitors a:active {
   background-color: #d35400;
 }
-/* line 81, ../../sass/style.scss */
+/* line 80, ../../sass/style.scss */
 .staff_visitors .start-index {
   font-size: 32px;
 }
 
-/* line 87, ../../sass/style.scss */
+/* line 86, ../../sass/style.scss */
 ul#member-list :hover {
   cursor: pointer;
 }
 
-/* line 92, ../../sass/style.scss */
+/* line 91, ../../sass/style.scss */
 li.member-box {
   display: none;
   list-style: none;
@@ -111,11 +111,11 @@ li.member-box {
   margin: 0 0 10px 0;
   background-color: #ecf0f1;
 }
-/* line 102, ../../sass/style.scss */
+/* line 101, ../../sass/style.scss */
 li.member-box p {
   margin: 1px;
 }
-/* line 107, ../../sass/style.scss */
+/* line 106, ../../sass/style.scss */
 li.member-box .photo img {
   width: 70px;
   height: 70px;
@@ -127,18 +127,18 @@ li.member-box .photo img {
   -o-border-radius: 70px;
   border-radius: 70px;
 }
-/* line 116, ../../sass/style.scss */
+/* line 115, ../../sass/style.scss */
 li.member-box .email {
   padding: 0 5px 0 0;
 }
 
-/* line 121, ../../sass/style.scss */
+/* line 120, ../../sass/style.scss */
 li.return-view-list {
   text-align: center;
   background-color: #95a5a6;
 }
 
-/* line 126, ../../sass/style.scss */
+/* line 125, ../../sass/style.scss */
 .response-message {
   position: fixed;
   top: 50%;
@@ -148,11 +148,11 @@ li.return-view-list {
   display: none;
   z-index: 999;
 }
-/* line 135, ../../sass/style.scss */
+/* line 134, ../../sass/style.scss */
 .response-message .tooltip-arrow {
   border-top-color: #27ae60 !important;
 }
-/* line 139, ../../sass/style.scss */
+/* line 138, ../../sass/style.scss */
 .response-message .tooltip-inner {
   width: 480px;
   max-width: 480px;
@@ -164,7 +164,7 @@ li.return-view-list {
   background-color: #27ae60;
   font-size: 24px;
 }
-/* line 147, ../../sass/style.scss */
+/* line 146, ../../sass/style.scss */
 .response-message .tooltip-inner .icon {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -172,14 +172,14 @@ li.return-view-list {
   box-flex: 1;
   padding: 10px 5px 0px 10px;
 }
-/* line 151, ../../sass/style.scss */
+/* line 150, ../../sass/style.scss */
 .response-message .tooltip-inner .text {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -ms-box-flex: 1;
   box-flex: 1;
 }
-/* line 155, ../../sass/style.scss */
+/* line 154, ../../sass/style.scss */
 .response-message .character {
   position: absolute;
   top: 105px;
@@ -187,7 +187,7 @@ li.return-view-list {
   color: #e67e22;
 }
 
-/* line 163, ../../sass/style.scss */
+/* line 162, ../../sass/style.scss */
 .response-error-message {
   position: fixed;
   width: 650px;
@@ -197,7 +197,7 @@ li.return-view-list {
   display: none;
   z-index: 999;
 }
-/* line 172, ../../sass/style.scss */
+/* line 171, ../../sass/style.scss */
 .response-error-message .tooltip-inner {
   width: 650px;
   max-width: 650px;
@@ -210,97 +210,32 @@ li.return-view-list {
   background-color: #c0392b;
 }
 
-/* line 182, ../../sass/style.scss */
-.call {
-  font-size: 16px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF0B99C2', endColorstr='#FF064D61');
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0b99c2), color-stop(100%, #087392));
-  background: -webkit-linear-gradient(#0b99c2, #087392);
-  background: -moz-linear-gradient(#0b99c2, #087392);
-  background: -o-linear-gradient(#0b99c2, #087392);
-  background: linear-gradient(#0b99c2, #087392);
-  -webkit-box-shadow: #27c5f3 0 1px 0 inset;
-  -moz-box-shadow: #27c5f3 0 1px 0 inset;
-  box-shadow: #27c5f3 0 1px 0 inset;
-  border: 1px solid #07607a;
-  color: white;
-  text-shadow: #043645 0 -1px 0;
-  visibility: hidden;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 1.3em;
-  height: 70px;
-}
-/* line 15, ../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.call:hover {
-  text-decoration: none;
-}
-/* line 36, ../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.call:hover {
-  background-color: #07607a;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0a86aa), color-stop(100%, #07607a));
-  background: -webkit-linear-gradient(#0a86aa, #07607a);
-  background: -moz-linear-gradient(#0a86aa, #07607a);
-  background: -o-linear-gradient(#0a86aa, #07607a);
-  background: linear-gradient(#0a86aa, #07607a);
-}
-/* line 39, ../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.call:active {
-  -webkit-box-shadow: #06546b 0 1px 2px inset;
-  -moz-box-shadow: #06546b 0 1px 2px inset;
-  box-shadow: #06546b 0 1px 2px inset;
-}
-/* line 6, ../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.call.disabled, .call[disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: #087392;
-  cursor: default;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-/* line 74, ../../../../.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
-.call::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
-}
-
-/* line 191, ../../sass/style.scss */
+/* line 181, ../../sass/style.scss */
 .flaticon-blowfish:before {
   font-size: 70px;
 }
 
-/* line 194, ../../sass/style.scss */
+/* line 184, ../../sass/style.scss */
 .flaticon-celebration:before {
   font-size: 70px;
 }
 
-/* line 197, ../../sass/style.scss */
+/* line 187, ../../sass/style.scss */
 .flaticon-dog4:before {
   font-size: 70px;
 }
 
-/* line 200, ../../sass/style.scss */
+/* line 190, ../../sass/style.scss */
 .flaticon-sheep1:before {
   font-size: 70px;
 }
 
-/* line 203, ../../sass/style.scss */
+/* line 193, ../../sass/style.scss */
 .flaticon-silhouette2:before {
   font-size: 70px;
 }
 
-/* line 206, ../../sass/style.scss */
+/* line 196, ../../sass/style.scss */
 .flaticon-phone13:before {
   font-size: 50px;
 }

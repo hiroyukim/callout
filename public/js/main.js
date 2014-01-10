@@ -1,23 +1,7 @@
-jQuery.fn.visible = function() {
-    return this.css('visibility', 'visible');
-};
-
-jQuery.fn.invisible = function() {
-    return this.css('visibility', 'hidden');
-};
-
-jQuery.fn.visibilityToggle = function() {
-    return this.css('visibility', function(i, visibility) {
-        return (visibility == 'visible') ? 'hidden' : 'visible';
-    });
-};
-
 $(function(){
     var characters = ["blowfish", "celebration", "dog4", "sheep1", "silhouette2"];
 
     $(".js-syllabary").click(function () {
-        $('.call').invisible();
-
         var index = $(this).data("index");
 
         $("ul#member-list li").each(function (i) {
@@ -38,11 +22,6 @@ $(function(){
         $("ul#member-list li").each(function (i) {
             $(this).hide();
         });
-    });
-
-    $('.js-focus').click(function() {
-        $('.call').invisible();
-        $(this).find('.call').visible();
     });
 
     $('.js-call').click(function() {
