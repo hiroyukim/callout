@@ -9,6 +9,7 @@ requires 'DBIx::Sunny',0;
 requires 'Object::Container',0;
 requires 'Lingua::JA::Moji',0;
 requires 'Time::Piece::MySQL',0;
+requires 'Starlet',0;
 
 on 'test' => sub {
     requires 'Test::More', '0.98';
