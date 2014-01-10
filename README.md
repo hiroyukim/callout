@@ -12,11 +12,11 @@ CallOut is ...
 
 # INSTALL
 
-* Copy config.pl.sample to config.pl and edit it appropriately.
-* set CALLOUT_CONFIG_PATH to the directory where config.pl exists
-* run sqlite3 callout.db < sql/sqlite.sql to create initial database
-* run script/member_update.pl to get HipChat member list
-* run script/member_create_syllabary.pl to create index
+- Copy config.pl.sample to config.pl and edit it appropriately.
+- set CALLOUT\_CONFIG\_PATH to the directory where config.pl exists
+- run sqlite3 callout.db < sql/sqlite.sql to create initial database
+- run script/member\_update.pl to get HipChat member list
+- run script/member\_create\_syllabary.pl to create index
 
 # LICENSE
 

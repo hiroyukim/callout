@@ -24,6 +24,22 @@ CallOut - It's new $module
 
 CallOut is ...
 
+=head1 INSTALL
+
+=ovar 1
+
+=item Copy config.pl.sample to config.pl and edit it appropriately.
+
+=item set CALLOUT_CONFIG_PATH to the directory where config.pl exists
+
+=item run sqlite3 callout.db < sql/sqlite.sql to create initial database
+
+=item run script/member_update.pl to get HipChat member list
+
+=item run script/member_create_syllabary.pl to create index
+
+=back
+
 =head1 LICENSE
 
 Copyright (C) Tatsuro Hisamori.
