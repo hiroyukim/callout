@@ -87,7 +87,8 @@ get '/' => sub {
                 SELECT member.*, syllabary.name as syllabary_name
                 FROM member
                     JOIN syllabary_member ON member.id = syllabary_member.member_id
-                    JOIN syllabary        ON syllabary_member.syllabary_id = syllabary.id");
+                    JOIN syllabary        ON syllabary_member.syllabary_id = syllabary.id
+                ORDER BY member.name");
 
     for my $member ( @{$members} ) {
         $member->{"index"} = CallOut::MemberIndex->get_index($member->{"syllabary_name"});
