@@ -4,7 +4,7 @@
       "Tatsuro Hisamori <medianetworks@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.9.0, CPAN::Meta::Converter version 2.131560",
+   "generated_by" : "Minilla/v0.11.0, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -43,6 +43,16 @@
       },
       "runtime" : {
          "requires" : {
+            "Class::Accessor::Lite" : "0",
+            "DBIx::Sunny" : "0",
+            "JSON::XS" : "0",
+            "Kossy" : "0",
+            "LWP::Protocol::https" : "0",
+            "Lingua::JA::Moji" : "0",
+            "Object::Container" : "0",
+            "Plack::Handler::Corona" : "0",
+            "Time::Piece::MySQL" : "0",
+            "Types::Serialiser" : "0",
             "perl" : "5.008005"
          }
       },
@@ -53,5 +63,25 @@
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/fout/callout/issues"
+      },
+      "homepage" : "https://github.com/fout/callout",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/fout/callout.git",
+         "web" : "https://github.com/fout/callout"
+      }
+   },
+   "version" : "0.01",
+   "x_contributors" : [
+      "hiroyukim <hiroyukimm __at___kuukiyonnde>",
+      "hiroyukim <hiroyukim@fout.jp>",
+      "Akiko Asami <gaooh@gaooh.local>",
+      "Kan Fushihara <kan.fushihara@gmail.com>",
+      "Jiro Nishiguchi <jiro@cpan.org>",
+      "gaooh <silver.vine.ebisen@gmail.com>",
+      "Haruka Iwao <haruka@fout.jp>"
+   ]
 }

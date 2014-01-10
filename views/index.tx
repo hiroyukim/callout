@@ -122,25 +122,24 @@
 
 : for $users -> $user {
     <li class="member-box row js-focus"  data-syllabary-index="<: $user['index']:>" data-name="<: $user['name'] :>">
-        <form method="post">
-            <input type="hidden" name="message" value="<: $user['name'] :>さんに来客です" />
-            <input type="hidden" name="mention_name" value="<: $user['mention_name'] :>" />
-            <input type="hidden" name="user_id" value="<: $user['api_id'] :>" />
-
-            <div class="photo col-sm-2">
-                <img src="<: $user['photo_url'] :>" />
-            </div>
-            <div class="info col-sm-7">
-                <span class="name"><: $user['name'] :></span>
-                <p>
-                    <span class="fui-mail"></span>
-                    <span class="email"><: $user['email'] :></span>
-                </p>
-            </div>
-            <div class="js-call call col-sm-3">
-                呼び出し
-            </div>
-        </form>
+        <div class="photo col-sm-2">
+            <img src="<: $user['photo_url'] :>" />
+        </div>
+        <div class="info col-sm-7">
+            <span class="name"><: $user['name'] :></span>
+            <p>
+                <span class="fui-mail"></span>
+                <span class="email"><: $user['email'] :></span>
+            </p>
+        </div>
+        <div class="js-call call col-sm-3">
+            呼び出し
+            <form method="post">
+                <input type="hidden" name="message" value="<: $user['name'] :>さんに来客です" />
+                <input type="hidden" name="mention_name" value="<: $user['mention_name'] :>" />
+                <input type="hidden" name="user_id" value="<: $user['api_id'] :>" />
+            </form>
+        </div>
     </li>
 : }
     <li class="member-box return-view-list js-return-view-list">一覧へ戻る</a>
