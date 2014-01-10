@@ -14,7 +14,6 @@ Makefile.old
 MANIFEST.bak
 META.yml
 MYMETA.yml
-MYMETA.json
 nytprof.out
 pm_to_blib
 .*.swp
@@ -24,4 +23,3 @@ config.pl
 callout.db
 callout.db-shm
 callout.db-wal
-Gemfile.lock

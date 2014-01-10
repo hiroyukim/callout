@@ -1,23 +1,7 @@
-jQuery.fn.visible = function() {
-    return this.css('visibility', 'visible');
-};
-
-jQuery.fn.invisible = function() {
-    return this.css('visibility', 'hidden');
-};
-
-jQuery.fn.visibilityToggle = function() {
-    return this.css('visibility', function(i, visibility) {
-        return (visibility == 'visible') ? 'hidden' : 'visible';
-    });
-};
-
 $(function(){
     var characters = ["blowfish", "celebration", "dog4", "sheep1", "silhouette2"];
 
     $(".js-syllabary").click(function () {
-        $('.call').invisible();
-
         var index = $(this).data("index");
 
         $("ul#member-list li").each(function (i) {
@@ -40,11 +24,6 @@ $(function(){
         });
     });
 
-    $('.js-focus').click(function() {
-        $('.call').invisible();
-        $(this).find('.call').visible();
-    });
-
     $('.js-call').click(function() {
         var params = $(this).find("form").serialize();
         var randnum = Math.floor( Math.random() * characters.length );
@@ -63,13 +42,7 @@ $(function(){
                 setTimeout(function(){
                     $("#response-message").fadeOut("slow");
                     $(".overlay").hide();
-                    $("#office-vistiors-content").show();
-                    $("#staff-vistiors-content").show();
-                    $(".js-return-view-list").hide();
-
-                    $("ul#member-list li").each(function (i) {
-                        $(this).hide();
-                    });
+                    location.reload(true);
                 },5000);
             })
             .fail(function() {
