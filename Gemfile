@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-require 'compass'
-require 'sassy-buttons'
+gem 'compass'
+gem 'sassy-buttons'
