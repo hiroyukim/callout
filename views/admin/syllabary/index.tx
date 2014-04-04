@@ -1,4 +1,4 @@
-: cascade admin_base
+: cascade base
 : around content -> {
 <table>
     <tr>
