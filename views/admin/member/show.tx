@@ -1,4 +1,4 @@
-: cascade admin_base
+: cascade base
 : around content -> {
 <h2><: $member['name'] :></h2>
 <table>
