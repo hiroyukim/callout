@@ -45,7 +45,7 @@ sub send_room_notification {
     my $url = sprintf(SEND_ROOM_NOTIFICATION_URL,$room,$self->auth_token);
 
     my $res = $self->client->request(
-        POST $url, 'content-type' => 'application/json',  Content => $json
+        POST $url, 'content-type' => 'application/json; charset=utf8',  Content => $json
     );
 
     unless( $res->is_success ) {
@@ -66,7 +66,7 @@ sub send_user_notification {
     my $url = sprintf(SEND_USER_NOTIFICATION_URL,$user_id,$self->auth_token);
 
     my $res = $self->client->request(
-        POST $url, 'content-type' => 'application/json',  Content => $json
+        POST $url, 'content-type' => 'application/json; charset=utf8',  Content => $json
     );
 
     unless( $res->is_success ) {
