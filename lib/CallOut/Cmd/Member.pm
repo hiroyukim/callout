@@ -7,6 +7,34 @@ use Lingua::JA::Moji 'romaji2hiragana';
 use Time::Piece::MySQL;
 use constant max_results => 100;
 
+sub delete  {
+    my ($class,$email) = @_;
+
+    my $member  = container('db')->select_row("SELECT * FROM member WHERE email = ?", $email);
+
+    unless( $member ) {
+        die "Not Found: $email";
+    }
+
+    my $syllabary  = container('db')->select_row("SELECT id FROM syllabary WHERE id NOT IN ( SELECT DISTINCT(syllabary_id) FROM syllabary_member WHERE member_id != ?)", $member->{id} );
+
+    container('db')->begin_work();
+
+    eval{
+        container('db')->do("DELETE FROM member WHERE id = ? ",{}, $member->{id} );
+        container('db')->do("DELETE FROM syllabary_member WHERE member_id = ? ", {},  $member->{id} );
+        if( $syllabary ) {
+            container('db')->do("DELETE FROM syllabary WHERE id = ?", {},$syllabary->{id}); 
+        }
+        container('db')->commit();
+    };
+    if($@) {
+        container('db')->rollback();
+        die $@;
+    }
+    
+}
+
 sub update {
     my $index = 0;
     while(1) {
