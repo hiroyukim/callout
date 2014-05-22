@@ -7,6 +7,7 @@ use warnings;
     },
     room       => '',
     auth_token => '',
+    exclusion_email_patterns => [],
     DBI        => [
         "dbi:SQLite:dbname=/path/to/db/callout.db",
         '',

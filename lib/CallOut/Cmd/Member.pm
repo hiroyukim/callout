@@ -2,10 +2,17 @@ package CallOut::Cmd::Member;
 use strict;
 use warnings;
 use CallOut::Container 'container';
+use CallOut::Config qw/config/;
 use Data::Dumper;
 use Lingua::JA::Moji 'romaji2hiragana';
 use Time::Piece::MySQL;
+use List::Util qw/any/;
 use constant max_results => 100;
+
+sub _is_exclusion_email($) {
+    my $email = shift;
+    any { $email =~ $_ } @{config->{exclusion_email_patterns}};
+}
 
 sub delete  {
     my ($class,$email) = @_;
@@ -50,6 +57,8 @@ sub update {
             unless( $member ) {
                 my $member_info = container('hipchat')->view_user({ user_id => $row->{id} }); 
                 
+                next if _is_exclusion_email $member_info->{email};
+                
                 container('db')->do("INSERT INTO member (api_id,name,mention_name,email,photo_url,group_id,modified) VALUES(?,?,?,?,?,?,?)",{},
                     $api_id,
                     $member_info->{name},
@@ -70,6 +79,8 @@ sub create_syllabary {
     my $rows = container('db')->select_all("SELECT * FROM member");
 
     for my $row ( @{$rows} ) {
+        next if _is_exclusion_email $row->{email};
+
         my @names = split /\s+/, $row->{name};
 
         my ($first_name,$last_name) = ($names[0],$names[-1]);
